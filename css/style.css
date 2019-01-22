@@ -1,94 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #eee;
 }
 
-.wrapper {
-  width: 1200px;
-  height: 2080px;
-  background-color: #fff;
-  padding-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
-  font-size: 0;
-  margin: auto;
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
 }
+
+.wrapper {
+  width: 900px;
+  background-color: #fff;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+/* MENU SETTINGS */
 
 .menu {
   list-style: none;
-}
-
-.menu-item {
-  width: 100px;
-  height: 40px;
-  line-height: 40px;
-  background-color: transparent;
-  font-size: 1rem;
-  display: inline-block;
-  margin: 0px 25px 80px;
   text-align: center;
-  color: #fff;
+  padding: 72px 0 100px;
 }
 
-.menu-item-last {
-  margin-right: 0;
+.menu li {
+  background-color: transparent;
+  font-size: 14px;
+  display: inline-block;
 }
 
-.menu-item-first {
-  margin-left: 325px;
+.menu li:not(:last-child) {
+  margin-right: 120px;
 }
 
-.menu-link {
-  display: block;
+.menu a {
   text-decoration: none;
   color: #626262;
   font-family: "Playfair Display", serif;
+  line-height: 24px;
+  display: block;
+  text-transform: uppercase;
 }
 
-.menu-link:hover {
+.menu a:hover,
+.menu a:focus {
   color: #03a9f4;
 }
 
+/* BOX INFORMATION */
+
 .box {
   width: 420px;
-  height: 500px;
   font-size: 1rem;
-  margin-left: 150px;
   display: inline-block;
   font-family: "Playfair Display", serif;
   color: #626262;
 }
 
-.box-right {
+.box:nth-child(-n + 4) {
+  margin-bottom: 130px;
+}
+
+.box:nth-child(2n + 2) {
   margin-left: 60px;
 }
 
+.image {
+  margin-bottom: 30px;
+}
+
 .signature {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 26px;
   font-size: 14px;
   color: #c7c1b6;
 }
 
 .text-head {
-  padding-bottom: 40px;
   font-size: 30px;
+  margin-bottom: 34px;
 }
 
 .text {
   font-size: 14px;
+  line-height: 24px;
 }
 
-.box-top {
-  padding-top: 130px;
+.wrapper-button {
+  text-align: center;
+  padding-top: 52px;
 }
 
-.btn {
-  width: 164px;
-  height: 60px;
-  border: 3px solid #626262;
-  /* padding-top: 55px; */
-  margin: 55px 518px 0 518px;
+/* BUTTON SETTINGS */
+
+.load-more-button {
+  padding: 18px 34px;
+  border: 1px solid #626262;
+  margin: 0 auto 70px;
   font-family: "Playfair Display", serif;
   color: #626262;
   font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
 }
