@@ -112,3 +112,8 @@ img {
   line-height: 24px;
   cursor: pointer;
 }
+
+.load-more-button:focus,
+.load-more-button:hover{
+  background: #03a9f4;
+}
