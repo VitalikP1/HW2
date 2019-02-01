@@ -75,6 +75,10 @@ img {
   margin-left: 60px;
 }
 
+.box:nth-child(n + 5) {
+  margin-bottom: 54px;
+}
+
 .image {
   margin-bottom: 30px;
 }
@@ -95,14 +99,10 @@ img {
   line-height: 24px;
 }
 
-.wrapper-button {
-  text-align: center;
-  padding-top: 52px;
-}
-
 /* BUTTON SETTINGS */
 
 .load-more-button {
+  display: block;
   padding: 18px 34px;
   border: 1px solid #626262;
   margin: 0 auto 70px;
