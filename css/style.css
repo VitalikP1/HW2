@@ -105,7 +105,7 @@ img {
   display: block;
   padding: 18px 34px;
   border: 1px solid #626262;
-  margin: 0 auto 70px;
+  margin: 0 auto;
   font-family: "Playfair Display", serif;
   color: #626262;
   font-size: 20px;
@@ -116,4 +116,8 @@ img {
 .load-more-button:focus,
 .load-more-button:hover{
   background: #03a9f4;
+}
+
+.content {
+    padding-bottom: 70px;
 }
